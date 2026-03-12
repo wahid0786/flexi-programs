@@ -1,5 +1,7 @@
 
-class Exception {
+import java.io.IOException;
+
+class ThrowExample {
 
     static void fun() {
         try {
@@ -10,11 +12,23 @@ class Exception {
         }
     }
 
-    public static void throwexample() {
+    static void hello() throws IOException {
+        System.out.println("hello world");
+
+    }
+
+    public static void main(String[] args) {
         try {
             fun();
         } catch (NullPointerException e) {
             System.out.println("Caught in throwexample().");
         }
+
+        try {
+            hello();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }

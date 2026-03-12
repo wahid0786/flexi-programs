@@ -9,14 +9,13 @@ public class StringBufferExample {
 
         sb.insert(6, "Java ");
         System.out.println("After Insert: " + sb);
+        System.out.println(sb);
 
         sb.replace(0, 5, "Hi");
         System.out.println("After Replace: " + sb);
-
-        sb.delete(2, 5);
-        System.out.println("After Delete: " + sb);
-
-        sb.reverse();
-        System.out.println("After Reverse: " + sb);
+        // sb.delete(2, 5);
+        // System.out.println("After Delete: " + sb);
+        // sb.reverse();
+        // System.out.println("After Reverse: " + sb);
     }
 }
